@@ -1,0 +1,495 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.navbar {
+  width: 100%;
+  padding-top: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: rgb(8, 8, 90);
+  color: white;
+  max-height: 10vh;
+}
+.navbar h1 {
+  color: white;
+}
+.logo {
+  width: 5%;
+  cursor: pointer;
+  margin: 30px 0;
+}
+.menu-icon {
+  display: none;
+  width: 5%;
+  cursor: pointer;
+}
+nav {
+  flex: 1;
+  text-align: right;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 30px;
+  font-size: 20px;
+}
+nav ul li a:hover {
+  color: aqua;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url(images/header-img.jpeg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 10vh);
+  position: relative;
+  background-position: top center;
+}
+.col-1 {
+  flex-basis: 40%;
+  position: relative;
+  margin-left: 50px;
+}
+.banner-container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  z-index: -1;
+}
+.banner-title {
+  padding-top: 10rem;
+  padding-left: 10vh;
+  display: block;
+  width: fit-content;
+  font-size: 4rem;
+  font-weight: bold;
+  position: relative;
+  color: rgb(45, 54, 134);
+}
+.banner-subtitle {
+  padding-left: 12vh;
+  display: block;
+  width: fit-content;
+  font-size: 2rem;
+  font-weight: bold;
+  position: relative;
+  color: rgb(27, 30, 32);
+}
+#about {
+  width: 100%;
+  height: 620px;
+  font-weight: bold;
+  border: 0.1px solid rgb(97, 87, 139);
+}
+.about-container {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10em;
+  margin-top: 3em;
+}
+#myimg {
+  height: 35%;
+  width: 35%;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.4%;
+  border: 0.5rem solid rgb(47, 36, 110);
+}
+.about-desc {
+  color: rgb(108, 43, 138);
+  text-align: left;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-family: "Noto Serif JP", serif;
+  font-weight: bold;
+  line-height: 1.7;
+  margin: 5em;
+}
+.skill-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 200px;
+  margin-top: 20px;
+  flex-direction: row;
+  margin-left: auto;
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+.skil1 {
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+  justify-content: center;
+}
+#image1 {
+  width: 150px;
+  height: 150px;
+  margin-right: 50px;
+}
+#skill-text {
+  color: black;
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 2em;
+}
+.heading {
+  display: flex;
+  widows: 100%;
+  height: 80px;
+  font-size: 2em;
+  color: black;
+  margin-top: 20px;
+  justify-content: center;
+  padding-top: 30px;
+  font-weight: bold;
+}
+.services {
+  margin: 10px;
+  font-family: "Noto Serif JP", serif;
+  color: rgb(16, 92, 92);
+  font-weight: normal;
+  font-size: 1.2em;
+  text-align: center;
+}
+.service-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.ser {
+  position: relative;
+  width: 20em;
+  min-height: 32em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("images/service-img.jpg");
+  justify-content: center;
+  border-radius: 5%;
+  margin: 10px 5px;
+  z-index: 1;
+  height: 100%;
+  overflow: auto;
+  padding: 0;
+}
+.inside {
+  font-family: "Noto Serif JP", serif;
+  position: absolute;
+  margin: 0;
+  padding: 10px;
+}
+
+#iconss {
+  margin: 0;
+  height: 60px;
+  width: 60px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+#iconss:hover {
+  transform: scale(1.1);
+}
+
+.ser-heading {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-family: "Noto Serif JP", serif;
+  color: rgb(22, 102, 102);
+  font-weight: bold;
+}
+.ser-info {
+  color: rgb(108, 43, 138);
+  text-align: left;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-family: "Noto Serif JP", serif;
+  font-weight: bold;
+  line-height: 1.7;
+}
+#recent-pro {
+  justify-content: center;
+}
+.project {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  width: 30em;
+  margin-right: 120px;
+}
+.project-img {
+  display: block;
+}
+.project-img img {
+  display: block;
+  width: 35em;
+  height: 20em;
+  border: 3px solid midnightblue;
+  cursor: pointer;
+}
+.project-img img:hover {
+  zoom: 105%;
+  border: 3px solid midnightblue;
+}
+.portfolio-description {
+  margin: 10px;
+  font-family: "Noto Serif JP", serif;
+}
+.project-name {
+  font-weight: bolder;
+  font-size: 25px;
+  color: rgba(23, 42, 212, 0.719);
+}
+.project-info {
+  color: rgba(156, 8, 8, 0.781);
+  font-weight: normal;
+  font-size: 18px;
+}
+hr {
+  width: 65em;
+  margin-left: 10em;
+  height: 5px;
+  background: #4c2c88;
+}
+section:nth-child(odd) {
+  background: linear-gradient(rgb(236, 242, 253), rgb(124, 181, 255));
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.con {
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+  padding: 4px;
+  border: 3px solid darkblue;
+  width: 20em;
+  height: 20em;
+  text-align: center;
+  justify-content: center;
+  margin: 10px 10px;
+}
+.con:hover {
+  transform: scale(1.1);
+}
+iframe {
+  margin: 0;
+  padding: 0;
+  height: 2.7em;
+  width: 15em;
+}
+h1 {
+  margin: 10px;
+  font-family: "Noto Serif JP", serif;
+  font-weight: bolder;
+  font-size: 25px;
+  color: rgba(124, 11, 11, 0.719);
+}
+h2 {
+  margin: 10px;
+  font-family: "Noto Serif JP", serif;
+  font-weight: bolder;
+  font-size: 20px;
+  color: rgba(253, 28, 28, 0.719);
+}
+
+.icon-social:hover {
+  transform: scale(0.8);
+  cursor: pointer;
+  border: 5px solid rgb(86, 33, 184);
+}
+.icon-social {
+  border: 4px solid white;
+  border-radius: 50px;
+  height: 5em;
+  width: 5em;
+  margin: 15px;
+}
+footer h1 {
+  font-family: "Noto Serif JP", serif;
+  text-align: center;
+  font-size: 1em;
+  background-color: black;
+  color: white;
+  font-weight: 200;
+  margin: 0;
+  min-width: 100vh;
+}
+@media only screen and (max-width: 1300px) {
+  nav ul {
+    width: 100%;
+    background: linear-gradient(lightgrey, lightblue);
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    z-index: 2;
+  }
+  nav ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  nav ul li a {
+    color: #000;
+  }
+  .menu-icon {
+    display: block;
+  }
+  #menuList {
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  .row {
+    flex-direction: column-reverse;
+    margin: 0;
+    padding: 0;
+  }
+  .col-1 {
+    flex-basis: 100;
+    margin: 0;
+  }
+  .banner-title {
+    padding-top: 0;
+    padding-left: 0;
+    font-size: 2rem;
+  }
+  .banner-subtitle {
+    padding-left: 0;
+    font-size: 1rem;
+  }
+  #about {
+    flex-direction: column-reverse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+  hr {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .heading {
+    flex-basis: 100;
+    margin: 0;
+  }
+  .about-container {
+    flex-direction: row;
+    margin-bottom: 2px;
+    padding: 0;
+    margin: 5px;
+  }
+  #myimg {
+    flex-basis: 100;
+    margin: 0;
+    margin-left: 10px;
+    height: 40%;
+    width: 40%;
+  }
+  .about-desc {
+    flex-basis: 100;
+    margin: 0;
+    margin-left: 10px;
+    font-size: 15px;
+    margin-bottom: 0;
+    font-weight: normal;
+    line-height: 1;
+  }
+  .skill-container {
+    flex-basis: 100;
+    flex-direction: column-reverse;
+    height: 150%;
+    margin: 0;
+    padding: 0;
+  }
+  .skil1 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  #image1 {
+    margin-top: 10%;
+    width: 50%;
+    height: 50%;
+    margin-right: 10px;
+  }
+  .text {
+    margin: 0;
+    padding: 0;
+    height: 50%;
+    color: black;
+  }
+  .service-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .ser {
+    width: 100%;
+    min-height: 25.5em;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+  }
+  .inside {
+    margin: 0;
+    padding: 10px;
+  }
+
+  .project {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .portfolio-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 11em;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .project-img img {
+    width: 21em;
+    height: 12em;
+    margin-left: 10px;
+    border: solid black;
+  }
+  .project-name {
+    font-size: 15px;
+  }
+  .project-info {
+    font-size: 15px;
+  }
+}

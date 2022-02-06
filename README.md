@@ -2,5 +2,5 @@
 Portfolio using simple HTML,CSS and JAVASCRIPT
 
 click this link to open project:
-https://ghinaamin200.github.io/portfolio.html
+https://ghinaamin200.github.io/Ghinaamin_Portfolio.github.io/portfolio.html
 
